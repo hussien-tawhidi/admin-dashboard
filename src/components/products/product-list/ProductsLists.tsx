@@ -65,7 +65,7 @@ export default function ProductsLists() {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/products?page=${currentPage}&limit=${itemsPerPage}&search=${searchQuery}&status=${filter}&stock=${stockFilter}`
+          `/api/products?page=${currentPage}&limit=${itemsPerPage}&search=${searchQuery}&status=${filter}&stock=${stockFilter}`
         );
         setAllProducts(data.products);
         setTotalProducts(data.total);
