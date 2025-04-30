@@ -1,0 +1,113 @@
+import { PiInvoiceLight } from "react-icons/pi";
+import { TbGitBranchDeleted } from "react-icons/tb";
+import { FcAcceptDatabase } from "react-icons/fc";
+import { CiSearch } from "react-icons/ci";
+
+export const stats = [
+  { title: "کل فاکتورها", value: "۲۳۱۰", icon: PiInvoiceLight },
+  { title: "فاکتورهای معلق", value: "۱۰۰۰", icon: TbGitBranchDeleted },
+  { title: "فاکتورهای پرداخت‌شده", value: "۱۳۱۰", icon: FcAcceptDatabase },
+  { title: "فاکتورهای غیرفعال", value: "۱۲۴۳", icon: CiSearch },
+];
+
+export const invoices = [
+  {
+    id: "#INV2540",
+    name: "مایکل ای. ماینر",
+    date: "۰۷ ژانویه ۲۰۲۳",
+    total: "$۴۵۲",
+    method: "مسترکارت",
+    status: "موفق",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV3924",
+    name: "ترزا تی. بروز",
+    date: "۰۳ دسامبر ۲۰۲۳",
+    total: "$۷۸۳",
+    method: "ویزا",
+    status: "لغو",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV5032",
+    name: "جیمز ال. اریکسون",
+    date: "۲۸ سپتامبر ۲۰۲۳",
+    total: "$۱۳۴",
+    method: "پی‌پال",
+    status: "موفق",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV1695",
+    name: "لیلی دبلیو. ویلسون",
+    date: "۱۰ آگوست ۲۰۲۳",
+    total: "$۹۴۵",
+    method: "مسترکارت",
+    status: "معلق",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV8473",
+    name: "سارا ام. بروکس",
+    date: "۲۲ مه ۲۰۲۳",
+    total: "$۴۲۱",
+    method: "ویزا",
+    status: "لغو",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV2150",
+    name: "جو کی. هال",
+    date: "۱۵ مارس ۲۰۲۳",
+    total: "$۲۵۱",
+    method: "پی‌پال",
+    status: "موفق",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV5636",
+    name: "رالف هیوبر",
+    date: "۱۵ مارس ۲۰۲۳",
+    total: "$۳۱۰",
+    method: "ویزا",
+    status: "موفق",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV2940",
+    name: "سارا درشر",
+    date: "۱۵ مارس ۲۰۲۳",
+    total: "$۲۴۱",
+    method: "مسترکارت",
+    status: "موفق",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV9027",
+    name: "لئونی مایستر",
+    date: "۱۵ مارس ۲۰۲۳",
+    total: "$۱۳۶",
+    method: "پی‌پال",
+    status: "معلق",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV3301",
+    name: "نیما شکوهی",
+    date: "۰۵ فوریه ۲۰۲۳",
+    total: "$۵۶۷",
+    method: "ویزا",
+    status: "لغو",
+    avatar: "/demo1.jpg",
+  },
+  {
+    id: "#INV1174",
+    name: "الهام شفیعی",
+    date: "۲۰ نوامبر ۲۰۲۳",
+    total: "$۶۷۸",
+    method: "مسترکارت",
+    status: "موفق",
+    avatar: "/demo1.jpg",
+  },
+];

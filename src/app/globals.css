@@ -1,3 +1,5 @@
+@import url("./styles/wazir-font.css");
+@import url("./styles/adminActionBtn.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #111216;
     --foreground: #ededed;
   }
 }
@@ -17,5 +19,43 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Vazir", Arial, sans-serif;
+
+}
+/* In your global CSS file (e.g., styles.css or in Tailwind's configuration file) */
+
+/* Jelly Effect Animation */
+@keyframes triangulate {
+  0%, 100% {
+    transform: none;
+  }
+  33.333% {
+    transform: translate(120%, 175%);
+  }
+  66.666% {
+    transform: translate(-95%, 175%);
+  }
+}
+
+@keyframes grow0 {
+  0%, 100% {
+    transform: scale(1.5);
+  }
+  20%, 70% {
+    transform: none;
+  }
+}
+
+.filter-jelly-triangle {
+  --uib-color: #64748b;
+  filter: url('#uib-jelly-triangle-ooze');
+}
+
+/* Apply animations to dots and traveler */
+.animate-grow0 {
+  animation: grow0 1.25s ease infinite;
+}
+
+.animate-triangulate {
+  animation: triangulate 1.25s ease infinite;
 }
